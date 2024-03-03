@@ -1,0 +1,275 @@
+*{
+    text-decoration: none;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(32, 32, 32) !important;
+}
+button{
+
+border-radius: 10px;
+}
+input{
+border:none;
+border-radius: 2px;
+width:200px;
+
+}
+form{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.form-container-welcome-back{
+   width: 50%;
+   z-index: 10;
+}
+.form-container-sign-up{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container-hello{
+    width: 50%;
+   
+}
+
+.form-container-sign-in{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 11;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container1{
+    
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: none;
+    
+}
+.container1::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #32cd32, #00ff40);
+    width: 50%;
+    height: 100%;
+    border-left: 0;
+    border-radius: 20px;
+    
+}
+.container2{
+    
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #32cd32, #00ff40);
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    
+}
+.container2::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-left: 0;
+    border-radius: 20px;
+    left: 0;
+    
+}
+
+.container2, .form-container-hello{
+    order:2;
+
+}
+.container2, .form-container-sign-in{
+    order:1;
+
+}
+
+h1 b{
+    color: #32cd32;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+    align-items: center;
+    display: flex;
+    justify-content: center;     ;
+}
+h1 a{
+    color: white;
+     text-decoration: none;
+     font-size: 35px;
+     font-family: "Prompt", sans-serif;
+     font-style: normal;
+     align-items: center;
+    display: flex;
+    justify-content: center;  
+
+}
+
+.fa-brands{
+    color:white;
+}
+span{
+    text-decoration: none;
+    color: black;
+    font-size:20px;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+
+.sign-up{
+    background-color:#32cd32;
+    color:white;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+    border:1px solid white;
+    width: 150px;
+    height:50px;
+    font-size:15px;
+   cursor: pointer;
+   font-weight: bold;
+   transition:background-color 0.3s ease;
+   display: block;
+   margin: 0 auto;
+   width: 150px;
+}
+.sign-up:hover{
+    background-color:white;
+    color:#32cd32;;
+    border:1px solid #32cd32;;
+}
+.sign-up2{
+    background-color:transparent;
+    color:white;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+    border:1px solid white;
+    width: 150px;
+    height:50px;
+    font-size:15px;
+   cursor: pointer;
+   font-weight: bold;
+   transition:background-color 0.3s ease;
+   display: block;
+   margin: 0 auto;
+   width: 150px;
+
+}
+.sign-up2:hover{
+    background-color:white;
+    color:#32cd32;
+    border:1px solid white;
+}
+.sign-in{
+    
+    background-color:transparent;
+    color:white;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+    border:1px solid white;
+    width: 150px;
+    height:50px;
+    font-size:15px;
+   cursor: pointer;
+   font-weight: bold;
+   transition:background-color 0.3s ease;
+   display: block;
+   margin: 0 auto;
+   width: 150px;
+}
+.sign-in:hover{
+    background-color:white;
+    color:#32cd32;
+    border:1px solid white;
+
+}
+.sign-in2{
+    background-color:#32cd32;
+    color:white;
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+    border:1px solid white;
+    width: 150px;
+    height:50px;
+    font-size:15px;
+   cursor: pointer;
+   font-weight: bold;
+   transition:background-color 0.3s ease;
+   display: block;
+   margin: 0 auto;
+   width: 150px;
+
+}
+
+.sign-in2:hover{
+    background-color:white;
+    color:#32cd32;;
+    border:1px solid #32cd32;;
+}
+
+.icons-redes-sociais{
+        display: flex;
+        align-items: center;
+}
+input{
+ margin: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.fa-brands{
+    font-size: 23px;
+    margin-left: 10px; 
+    
+}
+
+.fa-brands::before{
+    color: #32cd32;
+
+}
+#ico1::before{
+    color: #32cd32;
+
+}
+
+.icons-redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

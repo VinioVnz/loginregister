@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <link rel="shortcut icon" type="/assets/images/logohead.ico" href="/assets/images/logohead.ico">
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+    <div class="container1" id="container1">
+       
+        <div class="form-container-welcome-back">
+            <form>
+                <h1><a href="#">Bem Vindo de Volta!</h1>
+                <span>Entre com suas informações para ter acesso aos beneficios do site!</span>
+                <button class = "sign-in">ENTRAR</button>
+            </form>
+            </div>
+        <div class="form-container-sign-up">
+            <form>
+                <h1><b href="#">Criar Conta</h1>
+                <div class="icons-redes-sociais">
+                    <a href = "#" class = "icon"><i id = "ico1"class="fa-brands fa-google"></i>
+                    <a href = "#" class = "icon"><i id = "ico1"class="fa-brands fa-instagram"></i>
+                    <a href = "#" class = "icon"><i id = "ico1"class="fa-brands fa-github"></i>
+                    <a href = "#" class = "icon"><i id = "ico1"class="fa-brands fa-facebook"></i>
+                    
+                </div>
+                <span>Ou use seu email para se registrar!</span>
+
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="senha" placeholder="Senha">
+                <button class = "sign-up">REGISTRAR-SE</button>
+            </form>
+        </div>
+       
+            
+           
+        </div>
+            <div class="container2" id="container2">
+                <div class="form-container-hello">
+                    <form>
+                        <h1><a href="#">Olá,amigo!</h1>
+                        <span>Registre-se no site para ter acesso aos beneficios do site!</span>
+                        <button class="sign-up2">REGISTRAR-SE</button>
+                    </form>
+                </div>
+                <div class="form-container-sign-in">
+                    <form>
+                        <h1><b href="#">Iniciar Sessão</h1>
+                        <div class="icons-redes-sociais">
+                            <a href = "#" class = "iconb"><i class="fa-brands fa-google"></i>
+                            <a href = "#" class = "iconb"><i class="fa-brands fa-instagram"></i>
+                            <a href = "#" class = "iconb"><i class="fa-brands fa-github"></i>
+                            <a href = "#" class = "iconb"><i class="fa-brands fa-facebook"></i>
+                            
+                        </div>
+                        <span>Entre com sua conta!</span>
+        
+                        <input type="email" placeholder="Email">
+                        <input type="senha" placeholder="Senha">
+                        <button class = "sign-in2">ENTRAR</button>
+                    </form>
+                    </div>
+
+           
+        </div>
+    </div>
+
+    
+</body>
+<script>
+    // Obtém uma referência para o botão e para o container a ser ocultado/mostrado
+    var botao = document.querySelector(".sign-up2");
+    var container = document.getElementById("container2");
+
+    // Define uma função para alternar a exibição do container
+    function toggleContainer() {
+        if (container.style.display === "none") {
+            container.style.display = "flex"; // ou "block", dependendo do valor inicial do display do container
+        } else {
+            container.style.display = "none";
+        }
+    }
+
+    // Associa a função ao evento de clique do botão
+    botao.addEventListener("click", toggleContainer);
+</script>
+<script>
+    // Obtém uma referência para o botão e para o container a ser mostrado
+    var botaoMostrarContainer1 = document.querySelector(".sign-up2");
+    var container1 = document.getElementById("container1");
+    var container1before = document.getElementById("container1::before");
+    
+
+    // Define uma função para mostrar o container1
+    function mostrarContainer1() {
+        container1.style.display = "flex"; // ou "block", dependendo do valor inicial do display do container
+        container1before.style.display = "flex";
+    }
+
+    // Associa a função ao evento de clique do botão
+    botaoMostrarContainer1.addEventListener("click", mostrarContainer1);
+</script>
+<script>
+    // Obtém uma referência para o botão sign-in e para o container1
+    var botaoSignIn = document.querySelector(".sign-in");
+    var container1 = document.getElementById("container1");
+
+    // Define uma função para ocultar o container1
+    function ocultarContainer1() {
+        container1.style.display = "none";
+    }
+
+    // Associa a função ao evento de clique do botão sign-in
+    botaoSignIn.addEventListener("click", ocultarContainer1);
+</script>
+<script>
+    // Obtém uma referência para o botão sign-in e para o container2
+    var botaoSignIn = document.querySelector(".sign-in2");
+    var container2 = document.getElementById("container2");
+
+    // Define uma função para mostrar o container2
+    function mostrarContainer2() {
+        container2.style.display = "flex";
+    }
+
+    // Associa a função ao evento de clique do botão sign-in
+    botaoSignIn.addEventListener("click", mostrarContainer2);
+</script>
+<script>
+        var botaoSignIn = document.querySelector(".sign-in");
+        var container2 = document.getElementById("container2");
+
+        function mostrarContainer2() {
+            container2.style.display = "flex";
+        }
+
+        botaoSignIn.addEventListener("click", function() {
+            mostrarContainer2();
+            // Redireciona para a página inicial
+            window.location.href = "/";
+        });
+</script>
+<script src="https://kit.fontawesome.com/dd4eed3eee.js" crossorigin="anonymous"></script>
+</html>
